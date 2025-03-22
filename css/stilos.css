@@ -254,6 +254,10 @@ footer a {
     {
         font-size: 20px;
     }
+    .divColumnaIndex div
+    {
+        width: 100%;
+    }
     /* contactos */
     .contactanos
     {
