@@ -1,3 +1,19 @@
 *{
     margin: 0;
 }
+@import "header";
+@import "footer";
+@import "index";
+@import "financiamiento";
+// privacidad
+.mainPrivacidad{
+    background-color: beige;
+    h1, h2{
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+        margin: 5px 10px;
+        padding: 5px 0;
+    }
+}

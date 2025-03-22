@@ -1,0 +1,62 @@
+.mainIndex{
+    background-color: rgb(66, 76, 85);
+    .imgBanner{
+        width: 100%;
+        img{
+            width: 100%
+        }
+    }
+    h2{
+        padding-top: 20px;
+        color: black;
+        background-color: silver;
+        text-align: center;
+    }
+    .divColumnaIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            div{
+                align-content: center;
+                width: 500px;
+                height: 400px;
+                    img{
+                        border-radius: 5px;
+                        width: 100%
+                    }
+            }
+            p{
+                font-family: "Montserrat", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                padding: 20px 0;
+                font-weight: bold solid 50px;
+                text-align: center;
+            }
+            .pChevrolet{
+                background-color: rgb(236, 154, 41);
+                width: 100%
+            }
+            .pPeugeot {
+                background-color: rgb(242, 247, 242);
+                width: 100%
+            }
+            .pFiat{
+                background-color: rgb(168, 32, 26);
+                width: 100%
+            }
+            .pFord{
+                background-color: rgb(16, 152, 247);
+                width: 100%
+            }
+    }
+    .finMainIndex{
+        margin: 0 10px;
+        padding: 10px 0;
+        color: rgb(188, 189, 192);
+        text-align: center;
+    }
+}
