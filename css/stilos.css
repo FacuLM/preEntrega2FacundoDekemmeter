@@ -1,307 +1,350 @@
-*{
-    margin: 0;
-    padding: 0;
+.width, .mainIndex .imgBanner, .mainIndex .imgBanner img, .mainIndex .divColumnaIndex div img, .mainIndex .divColumnaIndex .pChevrolet, .mainIndex .divColumnaIndex .pPeugeot, .mainIndex .divColumnaIndex .pFiat, .mainIndex .divColumnaIndex .pFord, .bodyContactos .sectionContactos .formcontacto .formulario, .mainFinanciamiento .divImgFinanciamiento, .mainFinanciamiento .divImgFinanciamiento .col1 img {
+  width: 100%;
 }
-header, main {
-    background-color: rgb(66, 76, 85);
+
+.marginDivContactosH123p, .bodyContactos .sectionContactos .formcontacto .divDos h2, .bodyContactos .sectionContactos .formcontacto .divDos div div p, .bodyContactos .sectionContactos .formcontacto .divTres h2 {
+  margin: 15px 30px;
 }
+
+.flexCentroFin, .mainFinanciamiento section .divNumerosFinanciamineto .ctf, .mainFinanciamiento section .divNumerosFinanciamineto .centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5;
+}
+
 /* NAVBARRA*/
 .navBarra {
-    padding: 10px;
+  padding: 10px;
+  background-color: rgb(35, 2, 46);
 }
-.navBarra .div .div2 ul li a{
-    text-decoration: none;
-    color: beige;
-    font-size: 20px;
+.navBarra div h1 a {
+  font-family: "Montserrat", serif;
+  text-decoration: none;
+  color: beige;
 }
-.navBarra .div h1 a, .navBarra .div .div2 ul li a, .mainIndex, .mainIndex .divColumnaIndex p {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.navBarra div ul li a {
+  text-decoration: none;
+  color: beige;
+  font-size: 18px;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
-.navBarra .div h1 a{
-    font-size: 25px;
-    text-decoration: none;
-    color: beige;
-}
-.frase{
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    background-color: black;
-    color: beige;
-    text-align: center;
-    font-size: 20px;
-    padding: 20px 0;
-    margin: 0;
-}
-/* ---------- al final esta Media Queris------------- */ 
 
-/* Main Index */
+.frase {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: black;
+  color: beige;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+  margin: 0;
+}
 
-.mainIndex .imgBanner,.mainIndex .imgBanner img, .divColumnaIndex img ,.pChevrolet, .pPeugeot, .pFiat, .pFord {
-    width: 100%;
+.mainIndex {
+  background-color: rgb(66, 76, 85);
 }
-.mainIndex h2, .pChevrolet, .pPeugeot, .pFiat, .pFord, .finMainIndex{
-    text-align: center;
+.mainIndex h2 {
+  padding-top: 20px;
+  color: black;
+  background-color: silver;
+  text-align: center;
 }
-.mainIndex h2{
-    padding-top: 20px;
-    color: black;
-    background-color: silver;
+.mainIndex .divColumnaIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.divColumnaIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mainIndex .divColumnaIndex div {
+  align-content: center;
+  width: 600px;
+  height: 400px;
 }
-.divColumnaIndex div{
-    align-content: center;
-    width: 500px;
-    height: 400px;
+.mainIndex .divColumnaIndex div img {
+  border-radius: 5px;
 }
-.divColumnaIndex img{
-    border-radius: 5px;
+.mainIndex .divColumnaIndex p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 20px 0;
+  font-weight: bold solid 50px;
+  text-align: center;
 }
-.pChevrolet, .pPeugeot, .pFiat, .pFord {
-    font-size: 20px;
-    padding: 20px 0;
-    font-weight: bold solid 50px;
+.mainIndex .divColumnaIndex .pChevrolet {
+  background-color: rgb(236, 154, 41);
 }
-.pChevrolet{
-    background-color: rgb(236, 154, 41);
+.mainIndex .divColumnaIndex .pPeugeot {
+  background-color: rgb(242, 247, 242);
 }
-.pPeugeot {
-    background-color: rgb(242, 247, 242);
+.mainIndex .divColumnaIndex .pFiat {
+  background-color: rgb(168, 32, 26);
 }
-.pFiat{
-    background-color: rgb(168, 32, 26);
+.mainIndex .divColumnaIndex .pFord {
+  background-color: rgb(16, 152, 247);
 }
-.pFord{
-    background-color: rgb(16, 152, 247);
+.mainIndex .finMainIndex {
+  margin: 0 10px;
+  padding: 10px 0;
+  color: rgb(188, 189, 192);
+  text-align: center;
 }
-.finMainIndex{
-    margin: 0 10px;
-    padding: 10px 0;
-    color: rgb(188, 189, 192);
-}
-/* contactos */
-
-.mainContactos div img{
-    width: 100%;
-}
-.bodyContactos, .mainContactos{
-    background-color: rgba(26, 20, 35);
-}
-.contactanos{
-    background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 700px;
-    font-size: 60px;
-    padding-left: 20px;
-    color: white;
-}
-.formcontacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px 230px;
-    color: white;
-}
-.formulario ul {
-    list-style: none;
-}
-.formulario ul li{
-    margin: 20px 0;
-    box-shadow: white 300px;
-}
-.formulario ul li input{
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 15px;
-}
-.divUno h2, .divDos h2, .divTres h2, .divTres p {
-    margin: 15px 30px;
-}
-.botonEnviar{
-    font-size: 20px;
-    margin: 10px;
-    padding: 5px 10px;
-    border-radius: 30px;
-}
-/* Privacidad */
 
 .mainPrivacidad {
-    background-color: beige;
-    
+  background-color: beige;
 }
-.mainPrivacidad h1, h2{
-    text-align: center;
-    padding: 10px;
+.mainPrivacidad h1, .mainPrivacidad h2 {
+  text-align: center;
+  padding: 10px;
 }
-.mainPrivacidad p{
-    margin: 5px 10px;
-    padding: 5px 0;
-}
-
-/* financiamiento */
-
-.mainFinanciamiento .divH2Fin h2{
-    color: beige;
-}
-.tituloFin{
-    text-align: center;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    background: silver;
-    padding: 10px 0;
-}
-.divImgFinanciamiento{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    width: 100%;
-    height: 100%;
-}
-.divImgFinanciamiento img{
-    width: 100%;
-    height: 100%;
-}
-.col1{
-    display: grid;
-    grid-template-rows: 1fr 0.1fr ;
-    gap: 15px;
-    text-align: center;
-}
-.divImgFinanciamiento .nombreYfinanciamiento, .parrafoFinanciamiento{
-    font-size: 20px;
-    text-align: center;
-    padding: 15px 0;
-    margin: 0 10px;
-}
-.nombreYfinanciamiento{
-    background-color: rgb(24, 48, 89);
-}
-.numeros {
-    background-color: beige;
-    padding: 7px;
+.mainPrivacidad p {
+  margin: 5px 10px;
+  padding: 5px 0;
 }
 
-/* para definir en grid las columnas dentro de las " " usar palabras, cada palabra es una columna y cada " " es una fila */
+.bodyContactos {
+  background-color: rgb(26, 20, 35);
+}
+.bodyContactos .mainContactos .contactanos {
+  background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 550px;
+  font-size: 60px;
+  padding-left: 20px;
+  color: white;
+}
+.bodyContactos .sectionContactos .formcontacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 20px 230px;
+}
+.bodyContactos .sectionContactos .formcontacto div h2 {
+  margin: 15px 30px;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario ul {
+  list-style: none;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario ul li {
+  margin: 20px 0;
+  box-shadow: white 300px;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario ul li input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+  width: 40%;
+  text-align: start;
+}
+.bodyContactos .sectionContactos .formcontacto .divDos div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bodyContactos .sectionContactos .formcontacto .botonEnviar {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
 
-/* MODELOS aun por terminar */
+.mainFinanciamiento {
+  background-color: rgb(66, 76, 85);
+}
+.mainFinanciamiento .tituloFin {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  background: silver;
+  padding: 10px 0;
+}
+.mainFinanciamiento .divH2Fin {
+  color: yellow;
+  padding: 20px;
+}
+.mainFinanciamiento .divImgFinanciamiento {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+}
+.mainFinanciamiento .divImgFinanciamiento .col1 {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+  gap: 15px;
+  text-align: center;
+}
+.mainFinanciamiento .divImgFinanciamiento .col1 img {
+  height: 100%;
+}
+.mainFinanciamiento .divImgFinanciamiento .col1 .nombreYfinanciamiento {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 10px;
+  background-color: rgb(24, 48, 89);
+}
+.mainFinanciamiento .parrafoFin {
+  background-color: silver;
+  margin: 0;
+  padding: 10px;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: beige;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .ctf p {
+  font-size: 20px;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .ctf div .numeros {
+  font-size: 90px;
+  margin: 0;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .centro div p {
+  font-size: 20px;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .centro div div .numeros {
+  font-size: 30px;
+  margin: 0;
+}
 
-.mainModelos{
-    background-color: rgb(206, 195, 193);
+.mainModelos {
+  background-color: rgb(87, 85, 85);
 }
-.mainModelos h1, .mainModelos div p{
-    text-align: center;
+.mainModelos h1 {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Montserrat", serif;
 }
-.cuadroModelos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    gap: 30px;
-    align-items: center;
-    justify-items: center;
+.mainModelos .sectionModelos div .cuadroModelos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
 }
-.cuadroModelos div div{
-    background-color: rgb(6, 24, 38);
-    color: white;
+.mainModelos .sectionModelos div .cuadroModelos .divImgModelos div {
+  background-color: rgb(6, 24, 38);
+  color: white;
+}
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(35, 2, 46);
 }
-/* footer */
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(35, 2, 46);
+footer p {
+  font-size: 20px;
+  margin: 0;
 }
-footer p{
-    font-size: 20px;
-    margin: 0;
-}
-footer div ul{
-    text-align: center;
-    list-style: none;
+footer div ul {
+  margin: 0;
+  text-align: center;
+  list-style: none;
 }
 footer div ul li {
-    display: inline;
-    padding: 0 10px;
+  display: inline;
+  padding: 0 20px;
 }
 footer a {
-    text-decoration: none;
-    color: beige;
-    font-size: 20px;
+  text-decoration: none;
+  color: beige;
+  font-size: 20px;
 }
-/* Media queris */
+
 @media screen and (max-width: 750px) {
-    /* index */
-    .frase
-    {
-        font-size: 17px;
-    }
-    .mainIndex .h2Index
-    {
-        font-size: 20px;
-    }
-    .divColumnaIndex div
-    {
-        width: 100%;
-    }
-    /* contactos */
-    .contactanos
-    {
-        height: 300px;
-        font-size: 30px;
-    }
-    .formcontacto
-    {
-        margin: 20px;
-    }
-    /* financiamiento */
-    .divImgFinanciamiento, .divNumerosFinanciamineto
-    {
-        display: inline;
-    }
-    .divNumerosFinanciamineto div
-    {
-        margin: 0;
-        width: 100%;
-    }
-    .divNumerosFinanciamineto div p
-    {
-        text-align: center;
-        font-size: 20px;
-    }
-    .parrafoFinanciamiento
-    {
-        font-size: 20px;
-    }
-    /* modelos */
-    .mainModelos h1
-    {
-        font-size: 20px;
-    }
-    .cuadroModelos
-    {
-        display: inline;
-    }
-    /* footer */
-    footer, footer div ul
-    { 
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        background-color: rgb(35, 2, 46);
-    }
+  .frase {
+    font-size: 15px;
+  }
+  .mainIndex .h2Index {
+    font-size: 13px;
+    padding: 5px 30px;
+  }
+  .mainIndex .divColumnaIndex div {
+    width: 400px;
+  }
+  .mainIndex .divColumnaIndex p {
+    margin: 0;
+  }
+  .bodyContactos .mainContactos .contactanos {
+    height: 300px;
+    font-size: 30px;
+  }
+  .bodyContactos .sectionContactos .formcontacto {
+    margin: 20px;
+  }
+  .mainFinanciamiento .divImgFinanciamiento {
+    display: inline;
+  }
+  .mainFinanciamiento .divImgFinanciamiento .col1 {
+    display: inline;
+  }
+  .mainFinanciamiento .divImgFinanciamiento .col1 .nombreYfinanciamiento {
+    margin: 20px 0;
+  }
+  .mainFinanciamiento .parrafoFin {
+    font-size: 15px;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto .ctf div .numeros {
+    font-size: 70px;
+    padding: 20px 0;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto .centro div div .numeros {
+    text-align: center;
+    font-size: 25px;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto div .tea {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .mainModelos h1 {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .mainModelos .sectionModelos div .cuadroModelos {
+    display: inline;
+  }
+  /* footer */
+  footer, footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(35, 2, 46);
+  }
 }
+
+/*# sourceMappingURL=stilos.css.map */
