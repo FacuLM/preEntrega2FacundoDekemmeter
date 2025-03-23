@@ -36,9 +36,7 @@ html {
   color: beige;
   font-size: 18px;
   font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
 }
 
 .frase {
@@ -256,30 +254,33 @@ html {
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
   background-color: rgb(35, 2, 46);
 }
-footer p {
-  font-size: 20px;
-  margin: 0;
+footer div {
+  color: beige;
 }
 footer div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  padding: 30px 0;
   margin: 0;
   text-align: center;
   list-style: none;
 }
 footer div ul li {
-  display: inline;
   padding: 0 20px;
 }
-footer a {
-  text-decoration: none;
-  color: beige;
+footer div ul li p {
   font-size: 20px;
+  margin: 0;
+}
+footer div ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: beige;
 }
 
 @media screen and (max-width: 750px) {
@@ -339,7 +340,10 @@ footer a {
     display: inline;
   }
   /* footer */
-  footer, footer div ul {
+  footer {
+    display: inline;
+  }
+  footer div ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
