@@ -1,17 +1,235 @@
-/* Error: @use rules must be written before any other rules.
- *   ,
- * 4 | @use "_header";
- *   | ^^^^^^^^^^^^^^
- *   '
- *   sass\stilos.scss 4:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 4 \2502  @use "_header";\d\a   \2502  ^^^^^^^^^^^^^^\a   \2575 \a   sass\\stilos.scss 4:1  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  font-size: 62.5;
+}
+
+/* NAVBARRA*/
+.navBarra {
+  background-color: rgb(35, 2, 46);
+  padding: 10px;
+}
+.navBarra div h1 a {
+  font-family: "Montserrat", serif;
+  text-decoration: none;
+  color: beige;
+}
+.navBarra div ul li a {
+  text-decoration: none;
+  color: beige;
+  font-size: 18px;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.frase {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: black;
+  color: beige;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.mainIndex {
+  background-color: rgb(66, 76, 85);
+}
+.mainIndex .imgBanner {
+  width: 100%;
+}
+.mainIndex .imgBanner img {
+  width: 100%;
+}
+.mainIndex h2 {
+  padding-top: 20px;
+  color: black;
+  background-color: silver;
+  text-align: center;
+}
+.mainIndex .divColumnaIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainIndex .divColumnaIndex div {
+  align-content: center;
+  width: 500px;
+  height: 400px;
+}
+.mainIndex .divColumnaIndex div img {
+  border-radius: 5px;
+  width: 100%;
+}
+.mainIndex .divColumnaIndex p {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 20px 0;
+  font-weight: bold solid 50px;
+  text-align: center;
+}
+.mainIndex .divColumnaIndex .pChevrolet {
+  background-color: rgb(236, 154, 41);
+  width: 100%;
+}
+.mainIndex .divColumnaIndex .pPeugeot {
+  background-color: rgb(242, 247, 242);
+  width: 100%;
+}
+.mainIndex .divColumnaIndex .pFiat {
+  background-color: rgb(168, 32, 26);
+  width: 100%;
+}
+.mainIndex .divColumnaIndex .pFord {
+  background-color: rgb(16, 152, 247);
+  width: 100%;
+}
+.mainIndex .finMainIndex {
+  margin: 0 10px;
+  padding: 10px 0;
+  color: rgb(188, 189, 192);
+  text-align: center;
+}
+
+.mainPrivacidad {
+  background-color: beige;
+}
+.mainPrivacidad h1, .mainPrivacidad h2 {
+  text-align: center;
+  padding: 10px;
+}
+.mainPrivacidad p {
+  margin: 5px 10px;
+  padding: 5px 0;
+}
+
+.mainContactos {
+  background-color: rgb(26, 20, 35);
+}
+.mainContactos .contactanos {
+  background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 550px;
+  font-size: 60px;
+  padding-left: 20px;
+  color: white;
+}
+.mainContactos .sectionContactos .formcontacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 230px;
+  color: white;
+}
+.mainContactos .sectionContactos .formcontacto div h2 {
+  margin: 15px 30px;
+}
+.mainContactos .sectionContactos .formcontacto .formulario ul {
+  list-style: none;
+}
+.mainContactos .sectionContactos .formcontacto .formulario ul li {
+  margin: 20px 0;
+  box-shadow: white 300px;
+}
+.mainContactos .sectionContactos .formcontacto .formulario ul li input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.mainFinanciamiento {
+  background-color: rgb(66, 76, 85);
+}
+.mainFinanciamiento .tituloFin {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  background: silver;
+  padding: 10px 0;
+}
+.mainFinanciamiento .divH2Fin {
+  color: yellow;
+  margin: 0;
+}
+.mainFinanciamiento .divImgFinanciamiento {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+}
+.mainFinanciamiento .divImgFinanciamiento .col1 {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+  gap: 15px;
+  text-align: center;
+}
+.mainFinanciamiento .divImgFinanciamiento .col1 img {
+  width: 100%;
+  height: 100%;
+}
+.mainFinanciamiento .divImgFinanciamiento .col1 .nombreYfinanciamiento {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 10px;
+  background-color: rgb(24, 48, 89);
+}
+.mainFinanciamiento .parrafoFin {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 10px;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto div div .numeros {
+  background-color: beige;
+  padding: 7px;
+  color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(35, 2, 46);
+}
+footer p {
+  font-size: 20px;
+  margin: 0;
+}
+footer div ul {
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+footer div ul li {
+  display: inline;
+  padding: 0 20px;
+}
+footer a {
+  text-decoration: none;
+  color: beige;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=stilos.css.map */
