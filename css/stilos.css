@@ -6,6 +6,12 @@
   margin: 15px 30px;
 }
 
+.flexCentroFin, .mainFinanciamiento section .divNumerosFinanciamineto .ctf, .mainFinanciamiento section .divNumerosFinanciamineto .centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +71,7 @@ html {
 }
 .mainIndex .divColumnaIndex div {
   align-content: center;
-  width: 500px;
+  width: 600px;
   height: 400px;
 }
 .mainIndex .divColumnaIndex div img {
@@ -202,20 +208,38 @@ html {
   background-color: rgb(24, 48, 89);
 }
 .mainFinanciamiento .parrafoFin {
-  font-size: 20px;
-  text-align: center;
-  padding: 15px 0;
-  margin: 0 10px;
+  background-color: silver;
+  margin: 0;
+  padding: 10px;
 }
-.mainFinanciamiento section .divNumerosFinanciamineto div div .numeros {
+.mainFinanciamiento section .divNumerosFinanciamineto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
   background-color: beige;
-  padding: 7px;
-  color: black;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .ctf p {
+  font-size: 20px;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .ctf div .numeros {
+  font-size: 90px;
+  margin: 0;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .centro div p {
+  font-size: 20px;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .centro div div .numeros {
+  font-size: 30px;
+  margin: 0;
 }
 
+.mainModelos {
+  background-color: rgb(87, 85, 85);
+}
 .mainModelos h1 {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Montserrat", serif;
 }
 .mainModelos .sectionModelos div .cuadroModelos {
@@ -258,48 +282,61 @@ footer a {
   font-size: 20px;
 }
 
-/* Media queris */
 @media screen and (max-width: 750px) {
-  /* index */
   .frase {
-    font-size: 17px;
+    font-size: 15px;
   }
   .mainIndex .h2Index {
-    font-size: 20px;
+    font-size: 13px;
+    padding: 5px 30px;
   }
-  .divColumnaIndex div {
-    width: 100%;
+  .mainIndex .divColumnaIndex div {
+    width: 400px;
   }
-  /* contactos */
-  .contactanos {
+  .mainIndex .divColumnaIndex p {
+    margin: 0;
+  }
+  .bodyContactos .mainContactos .contactanos {
     height: 300px;
     font-size: 30px;
   }
-  .formcontacto {
+  .bodyContactos .sectionContactos .formcontacto {
     margin: 20px;
   }
-  /* financiamiento */
-  .divImgFinanciamiento, .divNumerosFinanciamineto {
+  .mainFinanciamiento .divImgFinanciamiento {
     display: inline;
   }
-  .divNumerosFinanciamineto div {
-    margin: 0;
-    width: 100%;
+  .mainFinanciamiento .divImgFinanciamiento .col1 {
+    display: inline;
   }
-  .divNumerosFinanciamineto div p {
-    text-align: center;
-    font-size: 20px;
+  .mainFinanciamiento .divImgFinanciamiento .col1 .nombreYfinanciamiento {
+    margin: 20px 0;
   }
-  .parrafoFinanciamiento {
-    font-size: 20px;
+  .mainFinanciamiento .parrafoFin {
+    font-size: 15px;
   }
-  /* modelos */
-  .mainModelos h1 {
-    font-size: 20px;
-  }
-  .cuadroModelos {
+  .mainFinanciamiento section .divNumerosFinanciamineto {
     display: flex;
     flex-direction: column;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto .ctf div .numeros {
+    font-size: 70px;
+    padding: 20px 0;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto .centro div div .numeros {
+    text-align: center;
+    font-size: 25px;
+  }
+  .mainFinanciamiento section .divNumerosFinanciamineto div .tea {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .mainModelos h1 {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .mainModelos .sectionModelos div .cuadroModelos {
+    display: inline;
   }
   /* footer */
   footer, footer div ul {

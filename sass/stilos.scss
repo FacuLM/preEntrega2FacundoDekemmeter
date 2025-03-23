@@ -71,7 +71,7 @@ html {font-size: 62.5;}
         align-items: center;
             div{
                 align-content: center;
-                width: 500px;
+                width: 600px;
                 height: 400px;
                     img{
                         border-radius: 5px;
@@ -112,6 +112,7 @@ html {font-size: 62.5;}
         text-align: center;
     }
 }
+
 // privacidad
 
 .mainPrivacidad{
@@ -241,18 +242,40 @@ html {font-size: 62.5;}
                 }
         }
         .parrafoFin{
-            font-size: 20px;
-            text-align: center;
-            padding: 15px 0;
-            margin: 0 10px;}
+            background-color: silver;
+            margin: 0;
+            padding: 10px;}
     section{
         .divNumerosFinanciamineto{
-            div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+            background-color: beige;
+            .ctf{
+                @extend .flexCentroFin;
+                p{
+                    font-size: 20px;
+                }
                 div{
                     .numeros{
-                        background-color: beige;
-                        padding: 7px;
-                        color: black;}
+                        font-size: 90px;
+                        margin: 0;
+                    }
+                }
+            }
+            .centro{
+                @extend .flexCentroFin;
+                div{
+                    p{
+                        font-size: 20px;
+                    }
+                    div{
+                        .numeros{
+                            font-size: 30px;
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
@@ -262,9 +285,10 @@ html {font-size: 62.5;}
 // modelos
 
 .mainModelos{
+    background-color: rgb(87, 85, 85);
     h1{
         text-decoration: none;
-        font-size: 20px;
+        font-size: 25px;
         font-family: "Montserrat", serif;
     }
     .sectionModelos{
@@ -272,7 +296,7 @@ html {font-size: 62.5;}
             .cuadroModelos{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr ;
+                grid-template-rows: 1fr 1fr 1fr;
                 gap: 30px;
                 align-items: center;
                 justify-items: center;
@@ -288,6 +312,7 @@ html {font-size: 62.5;}
 }
 
 // footer
+
 footer{
     display: flex;
     flex-direction: row;
@@ -316,62 +341,113 @@ footer{
         font-size: 20px;
     }
 }
-/* Media queris */
+
+// mediaqueris
+
 @media screen and (max-width: 750px) {
-    /* index */
-    .frase
-    {
-        font-size: 17px;
+.frase{
+    font-size: 15px;
+}
+
+// index
+
+.mainIndex{
+    .h2Index{
+        font-size: 13px;
+        padding: 5px 30px;
     }
-    .mainIndex .h2Index
-    {
-        font-size: 20px;
+    .divColumnaIndex{
+        div{
+            width: 400px;
+        }
+        p{
+            margin: 0;
+        }
     }
-    .divColumnaIndex div
-    {
-        width: 100%;
+}
+
+// contactos
+
+.bodyContactos{
+    .mainContactos{
+        .contactanos{
+            height: 300px;
+            font-size: 30px;
+        }
     }
-    /* contactos */
-    .contactanos
-    {
-        height: 300px;
-        font-size: 30px;
+    .sectionContactos{
+        .formcontacto{
+            margin: 20px;
+        }
     }
-    .formcontacto
-    {
-        margin: 20px;
-    }
-    /* financiamiento */
-    .divImgFinanciamiento, .divNumerosFinanciamineto
-    {
+}
+
+// financiamiento
+
+.mainFinanciamiento{
+    .divImgFinanciamiento{
         display: inline;
+        .col1{
+            display: inline;
+            .nombreYfinanciamiento{
+                margin: 20px 0;
+            }
+        }
     }
-    .divNumerosFinanciamineto div
-    {
-        margin: 0;
-        width: 100%;
+    .parrafoFin{
+        font-size: 15px;
     }
-    .divNumerosFinanciamineto div p
-    {
-        text-align: center;
-        font-size: 20px;
+    section{
+        .divNumerosFinanciamineto{
+            display: flex;
+            flex-direction: column;
+            .ctf{
+                div{
+                    .numeros{
+                        font-size: 70px;
+                        padding: 20px 0;
+                    }
+                }
+            }
+            .centro{
+                div{
+                    div{    
+                        .numeros{
+                            text-align: center;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+                div{
+                    .tea{
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+                }
+        }
     }
-    .parrafoFinanciamiento
-    {
-        font-size: 20px;
+}
+
+// modelos
+
+.mainModelos{
+    h1{
+        font-size: 15px;
+        padding: 10px;
     }
-    /* modelos */
-    .mainModelos h1
-    {
-        font-size: 20px;
+    .sectionModelos{
+        div{
+            .cuadroModelos{
+                display: inline;
+            }
+        }
     }
-    .cuadroModelos
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    /* footer */
-    footer, footer div ul
+}
+
+/* footer */
+
+footer, footer div ul
     { 
         display: flex;
         flex-direction: column;
