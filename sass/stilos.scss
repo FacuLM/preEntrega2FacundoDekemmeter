@@ -4,37 +4,38 @@
     padding: 0;
 }
 html {font-size: 62.5;}
-    /* NAVBARRA*/
-    .navBarra 
-        {
-            background-color: rgb(35, 2, 46);
-            padding: 10px;
-            div{
-                h1{
-                    a{
-                    font-family: "Montserrat", serif;
-                    text-decoration: none;
-                    color: beige;
-                    }
-                }
+
+/* NAVBARRA*/
+
+.navBarra {
+        padding: 10px;
+        background-color: rgb(35, 2, 46);
+    div{
+        h1{
+            a{
+            font-family: "Montserrat", serif;
+            text-decoration: none;
+            color: beige;
             }
-        div{
-            ul{
-                li{                
-                    a{
-                        text-decoration: none;
-                        color: beige;
-                        font-size: 18px;
-                        font-family: "Montserrat", serif;
-                        font-optical-sizing: auto;
-                        font-weight: 500;
-                        font-style: normal;
-                    }
-                } 
-            } 
         }
     }
-    .frase{
+    div{
+        ul{
+            li{                
+                a{
+                    text-decoration: none;
+                    color: beige;
+                    font-size: 18px;
+                    font-family: "Montserrat", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    font-style: normal;
+                }
+            } 
+        } 
+    }
+}
+.frase{
         font-family: "Roboto Slab", serif;
         font-optical-sizing: auto;
         font-weight: 300;
@@ -45,14 +46,16 @@ html {font-size: 62.5;}
         font-size: 20px;
         padding: 20px 0;
         margin: 0;
-    }
+}
+
 // index
+
 .mainIndex{
     background-color: rgb(66, 76, 85);
     .imgBanner{
-        width: 100%;
+        @extend .width;
         img{
-            width: 100%
+            @extend .width;
         }
     }
     h2{
@@ -72,7 +75,7 @@ html {font-size: 62.5;}
                 height: 400px;
                     img{
                         border-radius: 5px;
-                        width: 100%
+                        @extend .width;
                     }
             }
             p{
@@ -87,19 +90,19 @@ html {font-size: 62.5;}
             }
             .pChevrolet{
                 background-color: rgb(236, 154, 41);
-                width: 100%
+                @extend .width;
             }
             .pPeugeot {
                 background-color: rgb(242, 247, 242);
-                width: 100%
+                @extend .width;
             }
             .pFiat{
                 background-color: rgb(168, 32, 26);
-                width: 100%
+                @extend .width;
             }
             .pFord{
                 background-color: rgb(16, 152, 247);
-                width: 100%;
+                @extend .width;;
             }
     }
     .finMainIndex{
@@ -110,6 +113,7 @@ html {font-size: 62.5;}
     }
 }
 // privacidad
+
 .mainPrivacidad{
     background-color: beige;
     h1, h2{
@@ -121,48 +125,82 @@ html {font-size: 62.5;}
         padding: 5px 0;
     }
 }
+
 // contactos
-.mainContactos{
+
+.bodyContactos{
     background-color: rgba(26, 20, 35);
-    .contactanos{
-        background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 550px;
-        font-size: 60px;
-        padding-left: 20px;
-        color: white;
-    }
-    .sectionContactos{
-        .formcontacto{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 20px 230px;
+    .mainContactos{
+        .contactanos{
+            background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 550px;
+            font-size: 60px;
+            padding-left: 20px;
             color: white;
-            div{
-                h2{
-                    margin: 15px 30px;
-                }
+        }
+    }
+.sectionContactos{
+    .formcontacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin: 20px 230px;
+        div{
+            h2{
+                margin: 15px 30px;
             }
-            .formulario{
-                ul{
-                    list-style: none;
-                    li{
-                        margin: 20px 0;
-                        box-shadow: white 300px;
-                        input{
-                            margin: 10px 0;
-                            padding: 10px;
-                            font-size: 15px;
-                        }
+        }
+        .formulario{
+            @extend .width;
+            ul{
+                list-style: none;
+                li{
+                    margin: 20px 0;
+                    box-shadow: white 300px;
+                            input{
+                        margin: 10px 0;
+                        padding: 10px;
+                        font-size: 15px;
+                        width: 40%;
+                        text-align: start
                     }
                 }
             }
         }
+        .divDos{
+            h2{
+                @extend .marginDivContactosH123p;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                div {
+                    p{
+                        @extend .marginDivContactosH123p;
+                    }
+                }
+            }
+        }
+        .divTres{
+            h2{
+                @extend .marginDivContactosH123p;
+            }
+        }
+        .botonEnviar{
+            font-size: 20px;
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius: 30px;
+        }
     }
 }
+}
+
 // financiamiento
 
 .mainFinanciamiento{
@@ -176,37 +214,37 @@ html {font-size: 62.5;}
         padding: 10px 0;}
     .divH2Fin{
         color: yellow;
-        margin: 0;}
+        padding: 20px;}
     .divImgFinanciamiento{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
-        width: 100%;
+        @extend .width;
         height: 100%;
         font-size: 20px;
         text-align: center;
         padding: 15px 0;
-            .col1{
-                display: grid;
-                grid-template-rows: 1fr 0.1fr ;
-                gap: 15px;
-                text-align: center;
-                    img{
-                        width: 100%;
-                        height: 100%;}
-                    .nombreYfinanciamiento {
-                        font-size: 20px;
-                        text-align: center;
-                        padding: 15px 0;
-                        margin: 0 10px;
-                        background-color: rgb(24, 48, 89);}
-                    }
-            }
-            .parrafoFin{
-                font-size: 20px;
-                text-align: center;
-                padding: 15px 0;
-                margin: 0 10px;}
+        .col1{
+            display: grid;
+            grid-template-rows: 1fr 0.1fr ;
+            gap: 15px;
+            text-align: center;
+                img{
+                    @extend .width;
+                    height: 100%;}
+                .nombreYfinanciamiento {
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 15px 0;
+                    margin: 0 10px;
+                    background-color: rgb(24, 48, 89);}
+                }
+        }
+        .parrafoFin{
+            font-size: 20px;
+            text-align: center;
+            padding: 15px 0;
+            margin: 0 10px;}
     section{
         .divNumerosFinanciamineto{
             div{
@@ -220,6 +258,35 @@ html {font-size: 62.5;}
         }
     }
 }
+
+// modelos
+
+.mainModelos{
+    h1{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Montserrat", serif;
+    }
+    .sectionModelos{
+        div{
+            .cuadroModelos{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr ;
+                gap: 30px;
+                align-items: center;
+                justify-items: center;
+                .divImgModelos{
+                    div{
+                        background-color: rgb(6, 24, 38);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // footer
 footer{
     display: flex;
@@ -228,14 +295,13 @@ footer{
     align-items: center;
     padding: 20px;
     background-color: rgb(35, 2, 46);
-    // background-color: rgba(26, 20, 35);
     p{
         font-size: 20px;
         margin: 0;
     }
     div{
         ul{
-            margin: 0   ;
+            margin: 0;
             text-align: center;
             list-style: none;
             li{
@@ -250,65 +316,66 @@ footer{
         font-size: 20px;
     }
 }
-// /* Media queris */
-// @media screen and (max-width: 750px) {
-//     /* index */
-//     .frase
-//     {
-//         font-size: 17px;
-//     }
-//     .mainIndex .h2Index
-//     {
-//         font-size: 20px;
-//     }
-//     .divColumnaIndex div
-//     {
-//         width: 100%;
-//     }
-//     /* contactos */
-//     .contactanos
-//     {
-//         height: 300px;
-//         font-size: 30px;
-//     }
-//     .formcontacto
-//     {
-//         margin: 20px;
-//     }
-//     /* financiamiento */
-//     .divImgFinanciamiento, .divNumerosFinanciamineto
-//     {
-//         display: inline;
-//     }
-//     .divNumerosFinanciamineto div
-//     {
-//         margin: 0;
-//         width: 100%;
-//     }
-//     .divNumerosFinanciamineto div p
-//     {
-//         text-align: center;
-//         font-size: 20px;
-//     }
-//     .parrafoFinanciamiento
-//     {
-//         font-size: 20px;
-//     }
-//     /* modelos */
-//     .mainModelos h1
-//     {
-//         font-size: 20px;
-//     }
-//     .cuadroModelos
-//     {
-//         display: inline;
-//     }
-//     /* footer */
-//     footer, footer div ul
-//     { 
-//         display: flex;
-//         flex-direction: column;
-//         gap: 25px;
-//         background-color: rgb(35, 2, 46);
-//     }
-// }
+/* Media queris */
+@media screen and (max-width: 750px) {
+    /* index */
+    .frase
+    {
+        font-size: 17px;
+    }
+    .mainIndex .h2Index
+    {
+        font-size: 20px;
+    }
+    .divColumnaIndex div
+    {
+        width: 100%;
+    }
+    /* contactos */
+    .contactanos
+    {
+        height: 300px;
+        font-size: 30px;
+    }
+    .formcontacto
+    {
+        margin: 20px;
+    }
+    /* financiamiento */
+    .divImgFinanciamiento, .divNumerosFinanciamineto
+    {
+        display: inline;
+    }
+    .divNumerosFinanciamineto div
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .divNumerosFinanciamineto div p
+    {
+        text-align: center;
+        font-size: 20px;
+    }
+    .parrafoFinanciamiento
+    {
+        font-size: 20px;
+    }
+    /* modelos */
+    .mainModelos h1
+    {
+        font-size: 20px;
+    }
+    .cuadroModelos
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    /* footer */
+    footer, footer div ul
+    { 
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-color: rgb(35, 2, 46);
+    }
+}
