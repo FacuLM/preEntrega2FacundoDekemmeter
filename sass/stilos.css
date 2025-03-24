@@ -188,18 +188,11 @@ html {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.bodyContactos .sectionContactos .formcontacto .divTres .botonEnviar {
-  box-shadow: 0px 0px 10px 10px grey;
+.bodyContactos .sectionContactos .formcontacto .botonEnviar {
   font-size: 20px;
-  font-weight: 500;
   margin: 10px;
   padding: 5px 10px;
-  border-radius: 10px 10px 30px 30px;
-  text-decoration: none;
-}
-.bodyContactos .sectionContactos .formcontacto .divTres .botonEnviar a {
-  color: black;
-  text-decoration: none;
+  border-radius: 10px;
 }
 
 .mainFinanciamiento {
@@ -393,6 +386,4 @@ footer div ul li a {
     gap: 25px;
     background-color: rgb(35, 2, 46);
   }
-}
-
-/*# sourceMappingURL=stilos.css.map */
+}/*# sourceMappingURL=stilos.css.map */
