@@ -17,12 +17,10 @@ html {font-size: 62.5;}
                     @extend .boxshadow;
                     a{
                         margin: 0;
-                        padding: 5px 5px;
-                        border-radius: 20px;
-                        color: beige;
+                        padding: 5px 10px;
+                        @include variables.fuente;
                         font-size: 25px;
-                        font-family: "Montserrat", serif;
-                        font-weight: 500;}
+                    }
                     }
                 }
             div{
@@ -33,12 +31,9 @@ html {font-size: 62.5;}
                         li{
                             @extend .boxshadow1;
                             a{
-                                border-radius: 30px;
                                 text-decoration: none;
-                                color: beige;
+                                @include variables.fuente;
                                 font-size: 18px;
-                                font-family: "Montserrat", serif;
-                                font-weight: 500;
                                 
                             }
                         } 
@@ -47,19 +42,8 @@ html {font-size: 62.5;}
         }
     }
 
-
-
 .frase{
-        font-family: "Roboto Slab", serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        background-color: black;
-        color: beige;
-        text-align: center;
-        font-size: 20px;
-        padding: 20px 0;
-        margin: 0;
+    @include variables.frase;
 }
 
 // index
@@ -84,7 +68,6 @@ html {font-size: 62.5;}
         justify-content: center;
         align-items: center;
             div{
-                align-content: center;
                 width: 600px;
                 height: 400px;
                     img{
@@ -93,14 +76,7 @@ html {font-size: 62.5;}
                     }
             }
             p{
-                font-family: "Montserrat", serif;
-                font-optical-sizing: auto;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 20px;
-                padding: 20px 0;
-                font-weight: bold solid 50px;
-                text-align: center;
+                @include variables.pIndex;
             }
             .pChevrolet{
                 background-color: rgb(236, 154, 41);
@@ -147,23 +123,12 @@ html {font-size: 62.5;}
     background-color: rgba(26, 20, 35);
     .mainContactos{
         .contactanos{
-            background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 550px;
-            font-size: 60px;
-            padding-left: 20px;
-            color: white;
+            @include variables.contactanos;
         }
     }
 .sectionContactos{
     .formcontacto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        color: white;
-        margin: 20px 230px;
+        @include variables.formcontacto;
         div{
             h2{
                 margin: 15px 30px;
@@ -176,16 +141,16 @@ html {font-size: 62.5;}
                 li{
                     margin: 20px 0;
                     box-shadow: white 300px;
-                            input{
-                        margin: 10px 0;
-                        padding: 10px;
-                        font-size: 15px;
-                        width: 40%;
-                        text-align: start
+                        input{
+                            margin: 10px 0;
+                            padding: 10px;
+                            font-size: 15px;
+                            width: 40%;
+                            text-align: start
+                        }
                     }
                 }
             }
-        }
         .divDos{
             h2{
                 @extend .marginDivContactosH123p;
@@ -221,24 +186,13 @@ html {font-size: 62.5;}
 .mainFinanciamiento{
     background-color: rgb(66, 76, 85);
     .tituloFin{
-        text-align: center;
-        font-family: "Roboto Slab", serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        background: silver;
-        padding: 10px 0;}
+        @include variables.tituloFin;
+    }
     .divH2Fin{
         color: yellow;
         padding: 20px;}
     .divImgFinanciamiento{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 15px;
-        @extend .width;
-        height: 100%;
-        font-size: 20px;
-        text-align: center;
-        padding: 15px 0;
+        @include variables.divImgFinanciamiento;
         .col1{
             display: grid;
             grid-template-rows: 1fr 0.1fr ;
@@ -248,11 +202,8 @@ html {font-size: 62.5;}
                     @extend .width;
                     height: 100%;}
                 .nombreYfinanciamiento {
-                    font-size: 20px;
-                    text-align: center;
-                    padding: 15px 0;
-                    margin: 0 10px;
-                    background-color: rgb(24, 48, 89);}
+                    @include variables.nombreYfinanciamiento;
+                }
                 }
         }
         .parrafoFin{
@@ -261,11 +212,7 @@ html {font-size: 62.5;}
             padding: 10px;}
     section{
         .divNumerosFinanciamineto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            gap: 20px;
-            background-color: beige;
+            @include variables.divNumerosFinanciamineto;
             .ctf{
                 @extend .flexCentroFin;
                 p{
@@ -308,12 +255,7 @@ html {font-size: 62.5;}
     .sectionModelos{
         div{
             .cuadroModelos{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap: 30px;
-                align-items: center;
-                justify-items: center;
+                @include variables.cuadroModelos;
                 .divImgModelos{
                     div{
                         background-color: rgb(6, 24, 38);
@@ -334,8 +276,7 @@ footer{
         ul{
             display: flex;
             flex-direction: row;
-            align-items: center;
-            align-content: space-between;
+            justify-content: space-between; 
             padding: 30px 0;
             margin: 0;
             text-align: center;
@@ -359,6 +300,23 @@ footer{
 // mediaqueris
 
 @media screen and (max-width: 750px) {
+
+.navBarra{
+    div{
+        div{
+            h1{
+                margin: 0;
+            }
+        }
+        div{
+            ul{
+                display: flex;
+                flex-direction: column;
+                text-align: end;
+            }
+        }
+    }
+}
 .frase{
     font-size: 15px;
 }
