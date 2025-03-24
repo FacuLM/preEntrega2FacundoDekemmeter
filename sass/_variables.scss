@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {font-size: 62.5;}
 .width{
     width: 100%;
 }
@@ -28,89 +33,4 @@
         transition: 0.5s;
         font-weight: 600;
     }  
-}
-@mixin fuente{
-    border-radius: 20px;
-    color: beige;
-    font-family: "Montserrat", serif;
-    font-weight: 500;
-}
-@mixin frase{
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    background-color: black;
-    color: beige;
-    text-align: center;
-    font-size: 20px;
-    padding: 20px 0;
-    margin: 0;
-}
-@mixin pIndex{
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    padding: 20px 0;
-    font-weight: bold solid 50px;
-    text-align: center;
-}
-@mixin contactanos{
-    background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 550px;
-    font-size: 60px;
-    padding-left: 20px;
-    color: white;
-}
-@mixin formcontacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin: 20px 230px;
-}
-@mixin tituloFin{
-    text-align: center;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    background: silver;
-    padding: 10px 0;
-}
-@mixin divImgFinanciamiento{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 15px 0;
-}
-@mixin nombreYfinanciamiento{
-    font-size: 20px;
-    text-align: center;
-    padding: 15px 0;
-    margin: 0 10px;
-    background-color: rgb(24, 48, 89);
-}
-@mixin divNumerosFinanciamineto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-    background-color: beige;
-}
-@mixin cuadroModelos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    justify-items: center;
 }
