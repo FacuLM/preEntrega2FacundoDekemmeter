@@ -12,14 +12,16 @@
   justify-content: space-between;
 }
 
-.boxshadow :hover, .navBarra div ul li h1 :hover {
+.boxshadow :hover, .navBarra div div h1 :hover {
   color: beige;
   box-shadow: 0 0 20px silver;
   transition: 0.5s;
-  font-weight: 600;
+  color: black;
+  background-color: azure;
+  border-radius: 20px;
 }
 
-.boxshadow1 :hover, .navBarra div ul li :hover {
+.boxshadow1 :hover, .navBarra div div ul li :hover {
   border-radius: 30px;
   box-shadow: 0 0 20px silver;
   color: black;
@@ -42,23 +44,24 @@ html {
   padding: 10px;
   background-color: rgb(35, 2, 46);
 }
-.navBarra div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.navBarra div div h1 {
+  margin-bottom: 15px;
 }
-.navBarra div ul li h1 {
+.navBarra div div h1 a {
   margin: 0;
-}
-.navBarra div ul li h1 a {
-  margin: 0;
+  padding: 5px 5px;
+  border-radius: 20px;
   color: beige;
   font-size: 25px;
   font-family: "Montserrat", serif;
   font-weight: 500;
-  box-shadow: 0px 15px 15px -20px silver;
 }
-.navBarra div ul li a {
+.navBarra div div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navBarra div div ul li a {
   border-radius: 30px;
   text-decoration: none;
   color: beige;
@@ -290,7 +293,6 @@ footer div {
 footer div ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   align-content: space-between;
   padding: 30px 0;
