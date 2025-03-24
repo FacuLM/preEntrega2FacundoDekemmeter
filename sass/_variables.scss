@@ -9,3 +9,24 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.boxshadow{
+    :hover{
+        color: beige;
+        box-shadow: 0 0 20px silver;
+        transition: 0.5s;
+        font-weight: 600;
+    }  
+}
+.boxshadow1{
+    :hover{
+        border-radius: 30px;
+        box-shadow: 0 0 20px silver;
+        color: black;
+        background-color: azure;
+        transition: 0.5s;
+        font-weight: 600;
+    }  
+}
+.boxshadowSinHover{
+
+}

@@ -12,6 +12,22 @@
   justify-content: space-between;
 }
 
+.boxshadow :hover, .navBarra div ul li h1 :hover {
+  color: beige;
+  box-shadow: 0 0 20px silver;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.boxshadow1 :hover, .navBarra div ul li :hover {
+  border-radius: 30px;
+  box-shadow: 0 0 20px silver;
+  color: black;
+  background-color: azure;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +42,24 @@ html {
   padding: 10px;
   background-color: rgb(35, 2, 46);
 }
-.navBarra div h1 a {
-  font-family: "Montserrat", serif;
-  text-decoration: none;
+.navBarra div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navBarra div ul li h1 {
+  margin: 0;
+}
+.navBarra div ul li h1 a {
+  margin: 0;
   color: beige;
+  font-size: 25px;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  box-shadow: 0px 15px 15px -20px silver;
 }
 .navBarra div ul li a {
+  border-radius: 30px;
   text-decoration: none;
   color: beige;
   font-size: 18px;

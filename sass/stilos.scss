@@ -11,28 +11,39 @@ html {font-size: 62.5;}
         padding: 10px;
         background-color: rgb(35, 2, 46);
     div{
-        h1{
-            a{
-            font-family: "Montserrat", serif;
-            text-decoration: none;
-            color: beige;
-            }
-        }
-    }
-    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         ul{
-            li{                
+            li{
+                @extend .boxshadow1;
+                h1{
+                    margin: 0;
+                    @extend .boxshadow;
+                    a{
+                        margin: 0;
+                        color: beige;
+                        font-size: 25px;
+                        font-family: "Montserrat", serif;
+                        font-weight: 500;
+                        box-shadow: 0px 15px 15px -20px silver;
+                    }
+                }
                 a{
+                    border-radius: 30px ;
                     text-decoration: none;
                     color: beige;
                     font-size: 18px;
                     font-family: "Montserrat", serif;
                     font-weight: 500;
+                    
                 }
             } 
         } 
     }
 }
+
+
 .frase{
         font-family: "Roboto Slab", serif;
         font-optical-sizing: auto;
