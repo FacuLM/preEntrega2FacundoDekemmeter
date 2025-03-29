@@ -1,20 +1,32 @@
+@use "reset";
 @use "variables";
-@use "mixin";
+// variables.$center: center;
+// variables.$color: #f5f5dc;
+// variables.$width: 100%;
 
 /* NAVBARRA*/
 
-.navBarra {
+.navBarra{
     padding: 10px;
     background-color: rgb(35, 2, 46);
     div{
             div{
                 h1{
                     margin-bottom: 15px;
-                    @extend .boxshadow;
+                    :hover{
+                        box-shadow: 0 0 20px silver;
+                        transition: 0.5s;
+                        color: black;
+                        background-color: azure;
+                        border-radius: 20px;
+                    }
                     a{
                         margin: 0;
                         padding: 5px 10px;
-                        @include mixin.fuente;
+                        border-radius: 20px;
+                        color: variables.$color;
+                        font-family: "Montserrat", serif;
+                        font-weight: 500;
                         font-size: 25px;
                     }
                     }
@@ -25,10 +37,20 @@
                     flex-direction: row;
                     justify-content: space-evenly;
                         li{
-                            @extend .boxshadow1;
+                            :hover{
+                                border-radius: 20px;
+                                box-shadow: 0 0 20px silver;
+                                color: black;
+                                background-color: azure;
+                                transition: 0.5s;
+                                font-weight: 600;
+                            }  
                             a{
                                 text-decoration: none;
-                                @include mixin.fuente;
+                                border-radius: 20px;
+                                color: variables.$color;
+                                font-family: "Montserrat", serif;
+                                font-weight: 500;
                                 font-size: 18px;
                                 
                             }
@@ -39,7 +61,16 @@
     }
 
 .frase{
-    @include mixin.frase;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: black;
+    color: variables.$color;
+    text-align: variables.$center;
+    font-size: 20px;
+    padding: 20px 0;
+    margin: 0;
 }
 
 // index
@@ -47,64 +78,71 @@
 .mainIndex{
     background-color: rgb(66, 76, 85);
     .imgBanner{
-        @extend .width;
+            width: variables.$width;
         img{
-            @extend .width;
+                width: variables.$width;
         }
     }
     h2{
         padding-top: 20px;
         color: black;
         background-color: silver;
-        text-align: center;
+        text-align: variables.$center;
     }
     .divColumnaIndex{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: variables.$center;
+        align-items: variables.$center;
             div{
                 width: 600px;
                 height: 400px;
                     img{
                         border-radius: 5px;
-                        @extend .width;
+                            width: variables.$width;
                     }
             }
             p{
-                @include mixin.pIndex;
+                font-family: "Montserrat", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                padding: 20px 0;
+                font-weight: bold solid 50px;
+                text-align: variables.$center;
             }
             .pChevrolet{
                 background-color: rgb(236, 154, 41);
-                @extend .width;
+                    width: variables.$width;
             }
             .pPeugeot {
                 background-color: rgb(242, 247, 242);
-                @extend .width;
+                    width: variables.$width;
             }
             .pFiat{
                 background-color: rgb(168, 32, 26);
-                @extend .width;
+                    width: variables.$width;
             }
             .pFord{
                 background-color: rgb(16, 152, 247);
-                @extend .width;;
+                    width: variables.$width;;
             }
     }
     .finMainIndex{
         margin: 0 10px;
         padding: 10px 0;
         color: rgb(188, 189, 192);
-        text-align: center;
+        text-align: variables.$center;
     }
 }
 
 // privacidad
 
 .mainPrivacidad{
-    background-color: beige;
+    background-color: variables.$color;
     h1, h2{
-        text-align: center;
+        text-align: variables.$center;
         padding: 10px;
     }
     p{
@@ -119,19 +157,30 @@
     background-color: rgba(26, 20, 35);
     .mainContactos{
         .contactanos{
-            @include mixin.contactanos;
+            background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
+            background-repeat: no-repeat;
+            background-size: variables.$width variables.$width;
+            height: 550px;
+            font-size: 60px;
+            padding-left: 20px;
+            color: white;
         }
     }
 .sectionContactos{
     .formcontacto{
-        @include mixin.formcontacto;
+        display: flex;
+        flex-direction: column;
+        align-items: variables.$center;
+        text-align: variables.$center;
+        color: white;
+        margin: 20px 230px;
         div{
             h2{
                 margin: 15px 30px;
             }
         }
         .formulario{
-            @extend .width;
+                width: variables.$width;
             ul{
                 list-style: none;
                 li{
@@ -149,7 +198,7 @@
             }
         .divDos{
             h2{
-                @extend .marginDivContactosH123p;
+                margin: 15px 30px;
             }
             div{
                 display: flex;
@@ -157,17 +206,22 @@
                 justify-content: space-evenly;
                 div {
                     p{
-                        @extend .marginDivContactosH123p;
+                            margin: 15px 30px;
                     }
                 }
             }
         }
         .divTres{
             h2{
-                @extend .marginDivContactosH123p;
+                    margin: 15px 30px;
             }
             .botonEnviar{
-                @include mixin.botonEnviar;
+                box-shadow: 0px 0px 10px 10px grey;
+                font-size: 20px;
+                font-weight: 500;
+                margin: 10px;
+                padding: 5px 10px;
+                border-radius: 10px 10px 30px 30px;
                 text-decoration: none;
                 a{
                     color: black;
@@ -184,23 +238,39 @@
 .mainFinanciamiento{
     background-color: rgb(66, 76, 85);
     .tituloFin{
-        @include mixin.tituloFin;
+        text-align: variables.$center;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        background: silver;
+        padding: 10px 0;
     }
     .divH2Fin{
         color: yellow;
         padding: 20px;}
     .divImgFinanciamiento{
-        @include mixin.divImgFinanciamiento;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        width: variables.$width;
+        height: variables.$width;
+        font-size: 20px;
+        text-align: variables.$center;
+        padding: 15px 0;
         .col1{
             display: grid;
             grid-template-rows: 1fr 0.1fr ;
             gap: 15px;
-            text-align: center;
+            text-align: variables.$center;
                 img{
-                    @extend .width;
-                    height: 100%;}
+                        width: variables.$width;
+                    height: variables.$width;}
                 .nombreYfinanciamiento {
-                    @include mixin.nombreYfinanciamiento;
+                    font-size: 20px;
+                    text-align: variables.$center;
+                    padding: 15px 0;
+                    margin: 0 10px;
+                    background-color: rgb(24, 48, 89);
                 }
                 }
         }
@@ -210,9 +280,15 @@
             padding: 10px;}
     section{
         .divNumerosFinanciamineto{
-            @include mixin.divNumerosFinanciamineto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+            background-color: variables.$color;
             .ctf{
-                @extend .flexCentroFin;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                 p{
                     font-size: 20px;
                 }
@@ -224,7 +300,9 @@
                 }
             }
             .centro{
-                @extend .flexCentroFin;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                 div{
                     p{
                         font-size: 20px;
@@ -253,7 +331,12 @@
     .sectionModelos{
         div{
             .cuadroModelos{
-                @include mixin.cuadroModelos;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: variables.$center;
+                justify-items: variables.$center;
                 .divImgModelos{
                     div{
                         background-color: rgb(6, 24, 38);
@@ -270,9 +353,15 @@
 footer{
     background-color: rgb(35, 2, 46);
     div{
-        color: beige;        
+        color: variables.$color;        
         ul{
-            @include mixin.footerUl;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            padding: 30px 0;
+            margin: 0;
+            text-align: variables.$center;
+            list-style: none;
             li{
                 padding: 0 20px;
                 p{
@@ -282,7 +371,7 @@ footer{
                 a{
                     text-decoration: none;
                     font-size: 20px;
-                    color: beige;
+                    color: variables.$color;
                 }
             }
         }
@@ -377,7 +466,7 @@ footer{
                 div{
                     div{    
                         .numeros{
-                            text-align: center;
+                            text-align: variables.$center;
                             font-size: 25px;
                         }
                     }
@@ -385,7 +474,7 @@ footer{
             }
                 div{
                     .tea{
-                        text-align: center;
+                        text-align: variables.$center;
                         margin: 20px 0;
                     }
                 }

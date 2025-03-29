@@ -7,38 +7,6 @@ html {
   font-size: 62.5;
 }
 
-.width, .mainIndex .imgBanner, .mainIndex .imgBanner img, .mainIndex .divColumnaIndex div img, .mainIndex .divColumnaIndex .pChevrolet, .mainIndex .divColumnaIndex .pPeugeot, .mainIndex .divColumnaIndex .pFiat, .mainIndex .divColumnaIndex .pFord, .bodyContactos .sectionContactos .formcontacto .formulario, .mainFinanciamiento .divImgFinanciamiento .col1 img {
-  width: 100%;
-}
-
-.marginDivContactosH123p, .bodyContactos .sectionContactos .formcontacto .divDos h2, .bodyContactos .sectionContactos .formcontacto .divDos div div p, .bodyContactos .sectionContactos .formcontacto .divTres h2 {
-  margin: 15px 30px;
-}
-
-.flexCentroFin, .mainFinanciamiento section .divNumerosFinanciamineto .ctf, .mainFinanciamiento section .divNumerosFinanciamineto .centro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.boxshadow :hover, .navBarra div div h1 :hover {
-  color: beige;
-  box-shadow: 0 0 20px silver;
-  transition: 0.5s;
-  color: black;
-  background-color: azure;
-  border-radius: 20px;
-}
-
-.boxshadow1 :hover, .navBarra div div ul li :hover {
-  border-radius: 20px;
-  box-shadow: 0 0 20px silver;
-  color: black;
-  background-color: azure;
-  transition: 0.5s;
-  font-weight: 600;
-}
-
 /* NAVBARRA*/
 .navBarra {
   padding: 10px;
@@ -47,11 +15,18 @@ html {
 .navBarra div div h1 {
   margin-bottom: 15px;
 }
+.navBarra div div h1 :hover {
+  box-shadow: 0 0 20px silver;
+  transition: 0.5s;
+  color: black;
+  background-color: azure;
+  border-radius: 20px;
+}
 .navBarra div div h1 a {
   margin: 0;
   padding: 5px 10px;
   border-radius: 20px;
-  color: beige;
+  color: #f5f5dc;
   font-family: "Montserrat", serif;
   font-weight: 500;
   font-size: 25px;
@@ -61,10 +36,18 @@ html {
   flex-direction: row;
   justify-content: space-evenly;
 }
+.navBarra div div ul li :hover {
+  border-radius: 20px;
+  box-shadow: 0 0 20px silver;
+  color: black;
+  background-color: azure;
+  transition: 0.5s;
+  font-weight: 600;
+}
 .navBarra div div ul li a {
   text-decoration: none;
   border-radius: 20px;
-  color: beige;
+  color: #f5f5dc;
   font-family: "Montserrat", serif;
   font-weight: 500;
   font-size: 18px;
@@ -76,7 +59,7 @@ html {
   font-weight: 300;
   font-style: normal;
   background-color: black;
-  color: beige;
+  color: #f5f5dc;
   text-align: center;
   font-size: 20px;
   padding: 20px 0;
@@ -85,6 +68,12 @@ html {
 
 .mainIndex {
   background-color: rgb(66, 76, 85);
+}
+.mainIndex .imgBanner {
+  width: 100%;
+}
+.mainIndex .imgBanner img {
+  width: 100%;
 }
 .mainIndex h2 {
   padding-top: 20px;
@@ -104,6 +93,7 @@ html {
 }
 .mainIndex .divColumnaIndex div img {
   border-radius: 5px;
+  width: 100%;
 }
 .mainIndex .divColumnaIndex p {
   font-family: "Montserrat", serif;
@@ -117,15 +107,19 @@ html {
 }
 .mainIndex .divColumnaIndex .pChevrolet {
   background-color: rgb(236, 154, 41);
+  width: 100%;
 }
 .mainIndex .divColumnaIndex .pPeugeot {
   background-color: rgb(242, 247, 242);
+  width: 100%;
 }
 .mainIndex .divColumnaIndex .pFiat {
   background-color: rgb(168, 32, 26);
+  width: 100%;
 }
 .mainIndex .divColumnaIndex .pFord {
   background-color: rgb(16, 152, 247);
+  width: 100%;
 }
 .mainIndex .finMainIndex {
   margin: 0 10px;
@@ -135,7 +129,7 @@ html {
 }
 
 .mainPrivacidad {
-  background-color: beige;
+  background-color: #f5f5dc;
 }
 .mainPrivacidad h1, .mainPrivacidad h2 {
   text-align: center;
@@ -169,6 +163,9 @@ html {
 .bodyContactos .sectionContactos .formcontacto div h2 {
   margin: 15px 30px;
 }
+.bodyContactos .sectionContactos .formcontacto .formulario {
+  width: 100%;
+}
 .bodyContactos .sectionContactos .formcontacto .formulario ul {
   list-style: none;
 }
@@ -183,10 +180,19 @@ html {
   width: 40%;
   text-align: start;
 }
+.bodyContactos .sectionContactos .formcontacto .divDos h2 {
+  margin: 15px 30px;
+}
 .bodyContactos .sectionContactos .formcontacto .divDos div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.bodyContactos .sectionContactos .formcontacto .divDos div div p {
+  margin: 15px 30px;
+}
+.bodyContactos .sectionContactos .formcontacto .divTres h2 {
+  margin: 15px 30px;
 }
 .bodyContactos .sectionContactos .formcontacto .divTres .botonEnviar {
   box-shadow: 0px 0px 10px 10px grey;
@@ -234,6 +240,7 @@ html {
   text-align: center;
 }
 .mainFinanciamiento .divImgFinanciamiento .col1 img {
+  width: 100%;
   height: 100%;
 }
 .mainFinanciamiento .divImgFinanciamiento .col1 .nombreYfinanciamiento {
@@ -253,7 +260,12 @@ html {
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
-  background-color: beige;
+  background-color: #f5f5dc;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .ctf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mainFinanciamiento section .divNumerosFinanciamineto .ctf p {
   font-size: 20px;
@@ -261,6 +273,11 @@ html {
 .mainFinanciamiento section .divNumerosFinanciamineto .ctf div .numeros {
   font-size: 90px;
   margin: 0;
+}
+.mainFinanciamiento section .divNumerosFinanciamineto .centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mainFinanciamiento section .divNumerosFinanciamineto .centro div p {
   font-size: 20px;
@@ -295,7 +312,7 @@ footer {
   background-color: rgb(35, 2, 46);
 }
 footer div {
-  color: beige;
+  color: #f5f5dc;
 }
 footer div ul {
   display: flex;
@@ -316,7 +333,7 @@ footer div ul li p {
 footer div ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: beige;
+  color: #f5f5dc;
 }
 
 @media screen and (max-width: 750px) {
