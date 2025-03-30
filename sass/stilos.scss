@@ -156,10 +156,10 @@
 .bodyContactos{
     background-color: rgba(26, 20, 35);
     .mainContactos{
+        background-image: url(/img/20-08-t-commerce-1200x600.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         .contactanos{
-            background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
-            background-repeat: no-repeat;
-            background-size: variables.$width variables.$width;
             height: 550px;
             font-size: 60px;
             padding-left: 20px;
@@ -168,22 +168,24 @@
     }
 .sectionContactos{
     .formcontacto{
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: variables.$center;
         text-align: variables.$center;
-        color: white;
-        margin: 20px 230px;
         div{
             h2{
-                margin: 15px 30px;
+                margin: 15px 0;
+                font-size: 20px;
             }
         }
         .formulario{
+                position: static;
                 width: 100%;
                 display: grid;
                 grid-template-columns: 0.2fr 0.2fr;
-                grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr ;
+                grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+                width: 75%;
                 gap: 20px;
                 grid-template-areas: 
                 "label1 input1"
@@ -242,6 +244,7 @@
             }
         }
         .divTres{
+            width: 60%;
             h2{
                     margin: 15px 30px;
             }
