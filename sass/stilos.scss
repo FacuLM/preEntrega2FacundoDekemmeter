@@ -76,7 +76,7 @@
 // index
 
 .mainIndex{
-    background-color: rgb(66, 76, 85);
+    background-color: rgba(26, 20, 35);
     .imgBanner{
             width: variables.$width;
         img{
@@ -140,14 +140,18 @@
 // privacidad
 
 .mainPrivacidad{
-    background-color: variables.$color;
-    h1, h2{
-        text-align: variables.$center;
-        padding: 10px;
-    }
-    p{
-        margin: 5px 10px;
-        padding: 5px 0;
+    background-color: rgba(26, 20, 35);
+    color: white;
+    div{
+        margin: 30px;
+        h1, h2{
+            text-align: variables.$center;
+            padding: 10px;
+        }
+        p{
+            margin: 5px 10px;
+            padding: 5px 0;
+        }
     }
 }
 
@@ -266,10 +270,33 @@
 }
 }
 
+// enviar
+
+.bodyEnviar{
+    .mainEnviar{
+        background-color: rgba(26, 20, 35);
+        height: 500px;
+        display: block;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        .check{
+            color: green;
+            font-size: 120px;
+            width: 20%;
+        }
+        div{
+            font-size: 20px;
+        }
+    }
+}
+
+
 // financiamiento
 
 .mainFinanciamiento{
-    background-color: rgb(66, 76, 85);
+    background-color: rgba(26, 20, 35);
     .tituloFin{
         text-align: variables.$center;
         font-family: "Roboto Slab", serif;
@@ -308,9 +335,12 @@
                 }
         }
         .parrafoFin{
-            background-color: silver;
+            background-color: rgba(26, 20, 35);
             margin: 0;
-            padding: 10px;}
+            padding: 10px;
+            color: white;
+            text-align: variables.$center;
+        }
     section{
         .divNumerosFinanciamineto{
             display: flex;
@@ -355,7 +385,7 @@
 // modelos
 
 .mainModelos{
-    background-color: rgb(87, 85, 85);
+    background-color: rgba(26, 20, 35);
     h1{
         text-decoration: none;
         font-size: 25px;
@@ -464,6 +494,27 @@ footer{
     .sectionContactos{
         .formcontacto{
             margin: 20px;
+        }
+    }
+}
+
+// enviar
+
+.bodyEnviar{
+    .mainEnviar{
+        height: 300px;
+        .check{
+            color: green;
+            font-size: 80px;
+            width: 20%;
+        }
+        div{
+            h1{
+                font-size: 15px;
+            }
+            p{
+                font-size: 10px;
+            }
         }
     }
 }

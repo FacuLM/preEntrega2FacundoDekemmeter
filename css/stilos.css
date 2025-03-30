@@ -67,7 +67,7 @@ html {
 }
 
 .mainIndex {
-  background-color: rgb(66, 76, 85);
+  background-color: rgb(26, 20, 35);
 }
 .mainIndex .imgBanner {
   width: 100%;
@@ -129,13 +129,17 @@ html {
 }
 
 .mainPrivacidad {
-  background-color: #f5f5dc;
+  background-color: rgb(26, 20, 35);
+  color: white;
 }
-.mainPrivacidad h1, .mainPrivacidad h2 {
+.mainPrivacidad div {
+  margin: 30px;
+}
+.mainPrivacidad div h1, .mainPrivacidad div h2 {
   text-align: center;
   padding: 10px;
 }
-.mainPrivacidad p {
+.mainPrivacidad div p {
   margin: 5px 10px;
   padding: 5px 0;
 }
@@ -232,8 +236,26 @@ html {
   text-decoration: none;
 }
 
+.bodyEnviar .mainEnviar {
+  background-color: rgb(26, 20, 35);
+  height: 500px;
+  display: block;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+.bodyEnviar .mainEnviar .check {
+  color: green;
+  font-size: 120px;
+  width: 20%;
+}
+.bodyEnviar .mainEnviar div {
+  font-size: 20px;
+}
+
 .mainFinanciamiento {
-  background-color: rgb(66, 76, 85);
+  background-color: rgb(26, 20, 35);
 }
 .mainFinanciamiento .tituloFin {
   text-align: center;
@@ -275,9 +297,11 @@ html {
   background-color: rgb(24, 48, 89);
 }
 .mainFinanciamiento .parrafoFin {
-  background-color: silver;
+  background-color: rgb(26, 20, 35);
   margin: 0;
   padding: 10px;
+  color: white;
+  text-align: center;
 }
 .mainFinanciamiento section .divNumerosFinanciamineto {
   display: flex;
@@ -312,7 +336,7 @@ html {
 }
 
 .mainModelos {
-  background-color: rgb(87, 85, 85);
+  background-color: rgb(26, 20, 35);
 }
 .mainModelos h1 {
   text-decoration: none;
@@ -388,6 +412,20 @@ footer div ul li a {
   }
   .bodyContactos .sectionContactos .formcontacto {
     margin: 20px;
+  }
+  .bodyEnviar .mainEnviar {
+    height: 300px;
+  }
+  .bodyEnviar .mainEnviar .check {
+    color: green;
+    font-size: 80px;
+    width: 20%;
+  }
+  .bodyEnviar .mainEnviar div h1 {
+    font-size: 15px;
+  }
+  .bodyEnviar .mainEnviar div p {
+    font-size: 10px;
   }
   .mainFinanciamiento .divImgFinanciamiento {
     display: inline;
