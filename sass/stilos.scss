@@ -180,19 +180,49 @@
             }
         }
         .formulario{
-                width: variables.$width;
-            ul{
-                list-style: none;
-                li{
-                    margin: 20px 0;
-                    box-shadow: white 300px;
-                        input{
-                            margin: 10px 0;
-                            padding: 10px;
-                            font-size: 15px;
-                            width: 40%;
-                            text-align: start
-                        }
+                width: 100%;
+                display: grid;
+                grid-template-columns: 0.2fr 0.2fr;
+                grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr ;
+                gap: 20px;
+                grid-template-areas: 
+                "label1 input1"
+                "label2 input2"
+                "labe3l input3"
+                "label4 input4"
+                ;
+                justify-content: center;
+                align-items: center;
+                div{
+                    label{
+                        grid-area: label1;
+                    }
+                    input{
+                        grid-area: input1;
+                    }
+                }
+                div{
+                    label{
+                        grid-area: label2;
+                    }
+                    input{
+                        grid-area: input2;
+                    }
+                }
+                div{
+                    label{
+                        grid-area: label3;
+                    }
+                    input{
+                        grid-area: input3;
+                    }
+                }
+                div{
+                    label{
+                        grid-area: label4;
+                    }
+                    input{
+                        grid-area: input4;
                     }
                 }
             }

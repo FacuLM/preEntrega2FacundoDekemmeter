@@ -165,20 +165,37 @@ html {
 }
 .bodyContactos .sectionContactos .formcontacto .formulario {
   width: 100%;
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 20px;
+  grid-template-areas: "label1 input1" "label2 input2" "labe3l input3" "label4 input4";
+  justify-content: center;
+  align-items: center;
 }
-.bodyContactos .sectionContactos .formcontacto .formulario ul {
-  list-style: none;
+.bodyContactos .sectionContactos .formcontacto .formulario div label {
+  grid-area: label1;
 }
-.bodyContactos .sectionContactos .formcontacto .formulario ul li {
-  margin: 20px 0;
-  box-shadow: white 300px;
+.bodyContactos .sectionContactos .formcontacto .formulario div input {
+  grid-area: input1;
 }
-.bodyContactos .sectionContactos .formcontacto .formulario ul li input {
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 15px;
-  width: 40%;
-  text-align: start;
+.bodyContactos .sectionContactos .formcontacto .formulario div label {
+  grid-area: label2;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario div input {
+  grid-area: input2;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario div label {
+  grid-area: label3;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario div input {
+  grid-area: input3;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario div label {
+  grid-area: label4;
+}
+.bodyContactos .sectionContactos .formcontacto .formulario div input {
+  grid-area: input4;
 }
 .bodyContactos .sectionContactos .formcontacto .divDos h2 {
   margin: 15px 30px;
