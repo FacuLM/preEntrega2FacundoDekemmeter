@@ -170,14 +170,13 @@ html {
   font-size: 20px;
 }
 .bodyContactos .sectionContactos .formcontacto .formulario {
-  position: static;
   width: 100%;
   display: grid;
   grid-template-columns: 0.2fr 0.2fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
   width: 75%;
   gap: 20px;
-  grid-template-areas: "label1 input1" "label2 input2" "labe3l input3" "label4 input4";
+  grid-template-areas: "label1 input1" "label2 input2" "label3 input3" "label4 input4";
   justify-content: center;
   align-items: center;
 }
