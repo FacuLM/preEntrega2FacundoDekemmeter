@@ -384,8 +384,8 @@ footer div ul li a {
 }
 
 @media screen and (max-width: 750px) {
-  .navBarra div div h1 {
-    margin: 0;
+  .navBarra div div h1 a {
+    font-size: 20px;
   }
   .navBarra div div ul {
     display: flex;
