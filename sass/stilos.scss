@@ -398,6 +398,18 @@
                         background-color: rgb(6, 24, 38);
                         color: white;
                     }
+                    .botonConsultar{
+                        margin: 20px 0;
+                        background-color: variables.$colorBackground;
+                        padding: 5px;
+                        border-radius: 10px 15px 20px 10px;
+                        box-shadow: 5px 2px 20px 5px rgb(55, 37, 73);
+                        a{
+                            text-decoration: none;
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
                 }
             }
         }
@@ -442,10 +454,16 @@ footer{
     div{
         div{
             h1{
+                margin: 0;
                 a{
-                    font-size: 20px;
+                    font-size: 19px;
+                    text-align: start;
                 }
             }
+        }
+        button{
+            background-color: white ;
+            font-size: 15px ;
         }
         div{
             ul{
@@ -490,6 +508,7 @@ footer{
         .formcontacto{
             margin: 20px;
         }
+
     }
 }
 
@@ -572,6 +591,13 @@ footer{
         div{
             .cuadroModelos{
                 display: inline;
+                .divImgModelos{
+                    div{
+                        button{
+                            font-size: 1px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -354,6 +354,18 @@ html {
   background-color: rgb(6, 24, 38);
   color: white;
 }
+.mainModelos .sectionModelos div .cuadroModelos .divImgModelos .botonConsultar {
+  margin: 20px 0;
+  background-color: rgb(26, 20, 35);
+  padding: 5px;
+  border-radius: 10px 15px 20px 10px;
+  box-shadow: 5px 2px 20px 5px rgb(55, 37, 73);
+}
+.mainModelos .sectionModelos div .cuadroModelos .divImgModelos .botonConsultar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
 
 footer {
   background-color: rgb(35, 2, 46);
@@ -384,8 +396,16 @@ footer div ul li a {
 }
 
 @media screen and (max-width: 750px) {
+  .navBarra div div h1 {
+    margin: 0;
+  }
   .navBarra div div h1 a {
-    font-size: 20px;
+    font-size: 19px;
+    text-align: start;
+  }
+  .navBarra div button {
+    background-color: white;
+    font-size: 15px;
   }
   .navBarra div div ul {
     display: flex;
@@ -460,6 +480,9 @@ footer div ul li a {
   }
   .mainModelos .sectionModelos div .cuadroModelos {
     display: inline;
+  }
+  .mainModelos .sectionModelos div .cuadroModelos .divImgModelos div button {
+    font-size: 1px;
   }
   /* footer */
   footer {
